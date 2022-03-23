@@ -1,11 +1,12 @@
-import { useContext } from "react";
-import FeedbackContext from "./context/FeedbackContext";
+import React, { useContext } from "react";
+import FeedbackContext, { AppContext } from "./context/FeedbackContext";
 import { FaTimes, FaEdit } from "react-icons/fa";
 import Card from "./shared/Card";
-import PropTypes from "prop-types";
 
-const FeedbackItem = ({ item }) => {
-  const { deleteFeedback, editFeedback } = useContext(FeedbackContext);
+const FeedbackItem = ({ item }: any) => {
+  const { deleteFeedback, editFeedback } = useContext(
+    FeedbackContext
+  ) as AppContext;
 
   return (
     <Card>
@@ -19,10 +20,6 @@ const FeedbackItem = ({ item }) => {
       <div className="text-display">{item.text}</div>
     </Card>
   );
-};
-
-FeedbackItem.propTypes = {
-  item: PropTypes.object.isRequired,
 };
 
 export default FeedbackItem;
