@@ -1,6 +1,11 @@
 # Feedback App
  The app allows users to add, update and delete feedback. It uses a mock REST api with json-server.
  
+ 
+## What the app looks like
+
+![image](https://user-images.githubusercontent.com/46341318/160022052-187a7902-56b7-483e-bf7b-c37c15423a87.png)
+ 
 ## How to run the app
 1. Either fork or download the app and open the folder in the cli.
 2. Install all dependencies using 'npm i' command.
@@ -52,9 +57,6 @@
 - concurrently
 - framer-motion
 
-## What the app looks like
-
-![image](https://user-images.githubusercontent.com/46341318/160022052-187a7902-56b7-483e-bf7b-c37c15423a87.png)
 
 
 
